@@ -596,6 +596,15 @@ static void StartCdataHnd(void *userData)
 }
 
 extern "C" {
+static void EndCdataHnd(void *userData)
+{
+    wxXmlParsingContext *ctx = (wxXmlParsingContext*)userData;
+
+    ctx->lastAsText = NULL;
+}
+}
+
+extern "C" {
 static void CommentHnd(void *userData, const char *data)
 {
     wxXmlParsingContext *ctx = (wxXmlParsingContext*)userData;
@@ -696,7 +705,7 @@ bool wxXmlDocument::Load(wxInputStream& stream, const wxString& encoding, int fl
     XML_SetUserData(parser, (void*)&ctx);
     XML_SetElementHandler(parser, StartElementHnd, EndElementHnd);
     XML_SetCharacterDataHandler(parser, TextHnd);
-    XML_SetStartCdataSectionHandler(parser, StartCdataHnd);
+    XML_SetCdataSectionHandler(parser, StartCdataHnd, EndCdataHnd);
     XML_SetCommentHandler(parser, CommentHnd);
     XML_SetDefaultHandler(parser, DefaultHnd);
     XML_SetUnknownEncodingHandler(parser, UnknownEncodingHnd, NULL);
