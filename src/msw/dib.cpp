@@ -45,9 +45,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#if !defined(__MWERKS__) && !defined(__SALFORDC__)
-    #include <memory.h>
-#endif
+#include <memory.h>
 
 #include "wx/msw/dib.h"
 
@@ -91,43 +89,37 @@ bool wxDIB::Create(int width, int height, int depth)
 {
     // we don't support formats using palettes right now so we only create
     // either 24bpp (RGB) or 32bpp (RGBA) bitmaps
-    wxASSERT_MSG( depth, _T("invalid image depth in wxDIB::Create()") );
+    wxASSERT_MSG( depth, wxT("invalid image depth in wxDIB::Create()") );
     if ( depth < 24 )
         depth = 24;
 
     // allocate memory for bitmap structures
-    static const int sizeHeader = sizeof(BITMAPINFOHEADER);
+    BITMAPINFO info;
+    wxZeroMemory(info);
 
-    BITMAPINFO *info = (BITMAPINFO *)malloc(sizeHeader);
-    wxCHECK_MSG( info, false, _T("malloc(BITMAPINFO) failed") );
-
-    memset(info, 0, sizeHeader);
-
-    info->bmiHeader.biSize = sizeHeader;
-    info->bmiHeader.biWidth = width;
+    info.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+    info.bmiHeader.biWidth = width;
 
     // we use positive height here which corresponds to a DIB with normal, i.e.
     // bottom to top, order -- normally using negative height (which means
     // reversed for MS and hence natural for all the normal people top to
     // bottom line scan order) could be used to avoid the need for the image
     // reversal in Create(image) but this doesn't work under NT, only Win9x!
-    info->bmiHeader.biHeight = height;
+    info.bmiHeader.biHeight = height;
 
-    info->bmiHeader.biPlanes = 1;
-    info->bmiHeader.biBitCount = (WORD)depth;
-    info->bmiHeader.biSizeImage = GetLineSize(width, depth)*height;
+    info.bmiHeader.biPlanes = 1;
+    info.bmiHeader.biBitCount = (WORD)depth;
+    info.bmiHeader.biSizeImage = GetLineSize(width, depth)*height;
 
     m_handle = ::CreateDIBSection
                  (
                     0,              // hdc (unused with DIB_RGB_COLORS)
-                    info,           // bitmap description
+                    &info,          // bitmap description
                     DIB_RGB_COLORS, // use RGB, not palette
                     &m_data,        // [out] DIB bits
                     NULL,           // don't use file mapping
                     0               // file mapping offset (not used here)
                  );
-
-    free(info);
 
     if ( !m_handle )
     {
