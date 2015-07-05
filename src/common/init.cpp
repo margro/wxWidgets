@@ -37,7 +37,7 @@
 #include "wx/ptr_scpd.h"
 #include "wx/except.h"
 
-#if defined(__WXMSW__) && defined(__WXDEBUG__)
+#if 0//defined(__WXMSW__) && defined(__WXDEBUG__)
     #include "wx/msw/msvcrt.h"
 
     static struct EnableMemLeakChecking
