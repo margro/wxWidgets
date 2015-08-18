@@ -840,9 +840,9 @@
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswud\wxpng/wx_wxpng.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\wxpng/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\wxpng/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxpng/wx_wxpng.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\wxpng/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\wxpng/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxpngd.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -1125,9 +1125,9 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswu\wxpng/wx_wxpng.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\wxpng/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\wxpng/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxpng/wx_wxpng.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\wxpng/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\wxpng/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxpng.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>

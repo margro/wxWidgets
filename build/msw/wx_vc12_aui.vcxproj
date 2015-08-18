@@ -815,9 +815,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswud\wxprec_auilib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\aui/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\aui/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxprec_auilib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\aui/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\aui/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28ud_aui.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -1565,9 +1565,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswu\wxprec_auilib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\aui/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\aui/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxprec_auilib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\aui/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\aui/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28u_aui.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>

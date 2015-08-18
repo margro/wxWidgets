@@ -628,9 +628,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswud\wxprec_baselib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\base/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\base/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxprec_baselib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\base/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\base/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxbase28ud.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -1288,9 +1288,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswu\wxprec_baselib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\base/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\base/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxprec_baselib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\base/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\base/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxbase28u.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>

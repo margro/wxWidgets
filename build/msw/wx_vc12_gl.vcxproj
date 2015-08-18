@@ -756,9 +756,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswud\wxprec_gllib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\gl/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\gl/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxprec_gllib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\gl/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\gl/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28ud_gl.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -914,9 +914,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswu\wxprec_gllib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\gl/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\gl/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxprec_gllib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\gl/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\gl/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28u_gl.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>

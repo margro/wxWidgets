@@ -518,9 +518,9 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswu\wxregex/wx_wxregex.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\wxregex/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\wxregex/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxregex/wx_wxregex.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\wxregex/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\wxregex/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxregexu.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -1198,9 +1198,9 @@
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;__WXMSW__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswud\wxregex/wx_wxregex.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\wxregex/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\wxregex/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxregex/wx_wxregex.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\wxregex/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\wxregex/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxregexud.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

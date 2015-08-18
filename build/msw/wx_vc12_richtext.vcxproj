@@ -1065,9 +1065,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswud\wxprec_richtextlib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\richtext/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\richtext/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxprec_richtextlib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\richtext/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\richtext/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28ud_richtext.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -1285,9 +1285,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswu\wxprec_richtextlib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\richtext/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\richtext/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxprec_richtextlib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\richtext/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\richtext/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxmsw28u_richtext.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>

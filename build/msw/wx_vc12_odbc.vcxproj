@@ -633,9 +633,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswu\wxprec_odbclib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\odbc/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\odbc/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxprec_odbclib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\odbc/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\odbc/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxbase28u_odbc.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -787,9 +787,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>vc_mswud\wxprec_odbclib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\odbc/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\odbc/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxprec_odbclib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\odbc/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\odbc/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxbase28ud_odbc.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>

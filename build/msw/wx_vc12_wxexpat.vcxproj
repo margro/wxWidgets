@@ -899,9 +899,9 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswu\wxexpat/wx_wxexpat.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\wxexpat/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\wxexpat/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxexpat/wx_wxexpat.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\wxexpat/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\wxexpat/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxexpat.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -1237,9 +1237,9 @@
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswud\wxexpat/wx_wxexpat.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\wxexpat/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\wxexpat/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxexpat/wx_wxexpat.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\wxexpat/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\wxexpat/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxexpatd.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

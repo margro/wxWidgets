@@ -669,9 +669,9 @@
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswud\wxjpeg/wx_wxjpeg.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\wxjpeg/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\wxjpeg/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxjpeg/wx_wxjpeg.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\wxjpeg/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\wxjpeg/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxjpegd.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -957,9 +957,9 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswu\wxjpeg/wx_wxjpeg.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\wxjpeg/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\wxjpeg/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxjpeg/wx_wxjpeg.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\wxjpeg/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\wxjpeg/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxjpeg.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>

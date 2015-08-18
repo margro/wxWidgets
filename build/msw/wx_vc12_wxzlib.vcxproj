@@ -1044,9 +1044,9 @@
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswud\wxzlib/wx_wxzlib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswud\wxzlib/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswud\wxzlib/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswud\wxzlib/wx_wxzlib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswud\wxzlib/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswud\wxzlib/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxzlibd.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -1154,9 +1154,9 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\vc_mswu\wxzlib/wx_wxzlib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\vc_mswu\wxzlib/</AssemblerListingLocation>
-      <ObjectFileName>.\vc_mswu\wxzlib/</ObjectFileName>
+      <PrecompiledHeaderOutputFile>$(Platform)\vc_mswu\wxzlib/wx_wxzlib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(Platform)\vc_mswu\wxzlib/</AssemblerListingLocation>
+      <ObjectFileName>.\$(Platform)\vc_mswu\wxzlib/</ObjectFileName>
       <ProgramDataBaseFileName>..\..\lib\vc_x64_lib\wxzlib.pdb</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
