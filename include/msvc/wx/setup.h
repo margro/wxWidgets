@@ -23,9 +23,17 @@
             #endif
         #else
             #ifdef _DEBUG
-                #include "../../../lib/vc_lib/mswud/wx/setup.h"
+                #if defined(_M_X64)
+                    #include "../../../lib/vc_x64_lib/mswud/wx/setup.h"
+                #else
+                    #include "../../../lib/vc_lib/mswud/wx/setup.h"
+                #endif
             #else
-                #include "../../../lib/vc_lib/mswu/wx/setup.h"
+                #if defined(_M_X64)
+                    #include "../../../lib/vc_x64_lib/mswu/wx/setup.h"
+                #else
+                    #include "../../../lib/vc_lib/mswu/wx/setup.h"
+                #endif
             #endif
         #endif
 
