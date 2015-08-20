@@ -45,6 +45,7 @@
 
 #include "wx/imaglist.h"
 #include "wx/msw/dragimag.h"
+#include "wx/msw/uxtheme.h"
 
 // macros to hide the cast ugliness
 // --------------------------------
@@ -808,6 +809,20 @@ bool wxTreeCtrl::Create(wxWindow *parent,
 #endif // 0
 
     wxSetCCUnicodeFormat(GetHwnd());
+
+    if ( m_windowStyle & wxTR_TWIST_BUTTONS )
+    {
+        // Under Vista and later Explorer uses rotating ("twist") buttons
+        // instead of the default "+/-" ones so apply its theme to the tree
+        // control to implement this style.
+        if ( wxGetWinVersion() >= wxWinVersion_Vista )
+        {
+            if ( wxUxThemeEngine *theme = wxUxThemeEngine::GetIfActive() )
+            {
+                theme->SetWindowTheme(GetHwnd(), L"EXPLORER", NULL);
+            }
+        }
+    }
 
     return true;
 }
