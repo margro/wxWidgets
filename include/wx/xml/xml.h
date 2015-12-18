@@ -128,6 +128,11 @@ public:
     wxString GetName() const { return m_name; }
     wxString GetContent() const { return m_content; }
 
+    // Grs: optimization for faster string concatenation
+    void PreAlloc(size_t blockSize);
+    void AppendContent(const wxChar* data);
+    void AppendContent(const wxChar* data, size_t len);
+
     bool IsWhitespaceOnly() const;
     int GetDepth(wxXmlNode *grandparent = NULL) const;
 

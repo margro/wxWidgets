@@ -364,8 +364,21 @@ bool wxXmlNode::IsWhitespaceOnly() const
     return wxIsWhiteOnly(m_content);
 }
 
+void wxXmlNode::PreAlloc(size_t blockSize)
+{
+  m_content.Alloc(blockSize);
+}
 
 
+void wxXmlNode::AppendContent(const wxChar* data)
+{
+  m_content.Append(data);
+}
+
+void wxXmlNode::AppendContent(const wxChar* data, size_t len)
+{
+  m_content.Append(data, len);
+}
 //-----------------------------------------------------------------------------
 //  wxXmlDocument
 //-----------------------------------------------------------------------------
@@ -556,14 +569,25 @@ extern "C" {
 static void TextHnd(void *userData, const char *s, int len)
 {
     wxXmlParsingContext *ctx = (wxXmlParsingContext*)userData;
-    wxString str = CharToString(ctx->conv, s, len);
 
+#if wxUSE_UNICODE==0
+    if (!ctx->conv && ctx->lastAsText)
+    {
+        // skip the CharToString conversion since it is not needed
+        // It saves an unnecessary wxString allocation/deallocation
+        // This will speed-up reading large CDATA sections
+        ctx->lastAsText->AppendContent(s, len);
+    }
+    else
+#endif
     if (ctx->lastAsText)
     {
-        ctx->lastAsText->SetContent(ctx->lastAsText->GetContent() + str);
+        wxString str = CharToString(ctx->conv, s, len);
+        ctx->lastAsText->AppendContent(str.c_str(), str.length());
     }
     else
     {
+        wxString str = CharToString(ctx->conv, s, len);
         bool whiteOnly = false;
         if (ctx->removeWhiteOnlyNodes)
             whiteOnly = wxIsWhiteOnly(str);
