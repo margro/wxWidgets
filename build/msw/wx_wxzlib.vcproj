@@ -4,6 +4,7 @@
 	Version="8,00"
 	Name="wxzlib"
 	ProjectGUID="{89B903C5-1C47-4A6E-855A-6CE8C10BB03E}"
+	RootNamespace="wxzlib"
 	>
 	<Platforms>
 		<Platform
@@ -334,7 +335,7 @@
 				InlineFunctionExpansion="1"
 				PreprocessorDefinitions="WIN32;_LIB"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxzlib/wx_wxzlib.pch"

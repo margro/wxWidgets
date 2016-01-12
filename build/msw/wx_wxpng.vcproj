@@ -4,6 +4,7 @@
 	Version="8,00"
 	Name="wxpng"
 	ProjectGUID="{2465E379-613B-47F8-9EA1-B10330FB7119}"
+	RootNamespace="wxpng"
 	>
 	<Platforms>
 		<Platform
@@ -780,7 +781,7 @@
 				AdditionalIncludeDirectories="..\..\src\zlib"
 				PreprocessorDefinitions="WIN32;_LIB"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxpng/wx_wxpng.pch"

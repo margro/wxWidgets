@@ -4,6 +4,7 @@
 	Version="8,00"
 	Name="wxjpeg"
 	ProjectGUID="{B12840D2-570D-46CA-AF8D-FA461B16A705}"
+	RootNamespace="wxjpeg"
 	>
 	<Platforms>
 		<Platform
@@ -192,7 +193,7 @@
 				AdditionalIncludeDirectories="..\..\lib\vc_lib\msw"
 				PreprocessorDefinitions="WIN32;_LIB"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxjpeg/wx_wxjpeg.pch"

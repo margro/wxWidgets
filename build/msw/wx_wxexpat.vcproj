@@ -4,6 +4,7 @@
 	Version="8,00"
 	Name="wxexpat"
 	ProjectGUID="{FDC56C28-BC44-45E0-B19E-42A0F7E85C8B}"
+	RootNamespace="wxexpat"
 	>
 	<Platforms>
 		<Platform
@@ -634,7 +635,7 @@
 				AdditionalIncludeDirectories="..\..\lib\vc_lib"
 				PreprocessorDefinitions="WIN32;_LIB;COMPILED_FROM_DSP"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxexpat/wx_wxexpat.pch"

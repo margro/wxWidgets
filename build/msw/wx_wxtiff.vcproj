@@ -4,6 +4,7 @@
 	Version="8,00"
 	Name="wxtiff"
 	ProjectGUID="{14AF090B-E9B3-4C1D-B3D6-68A15A719DE0}"
+	RootNamespace="wxtiff"
 	>
 	<Platforms>
 		<Platform
@@ -853,7 +854,7 @@
 				AdditionalIncludeDirectories="..\..\src\zlib,..\..\src\jpeg"
 				PreprocessorDefinitions="WIN32;_LIB"
 				StringPooling="true"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				RuntimeTypeInfo="true"
 				PrecompiledHeaderFile=".\vc_msw\wxtiff/wx_wxtiff.pch"
