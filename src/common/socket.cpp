@@ -764,7 +764,7 @@ int gs_socketInitCount = 0;
 
 bool wxSocketBase::IsInitialized()
 {
-    wxASSERT_MSG( wxIsMainThread(), "unsafe to call from other threads" );
+    //wxASSERT_MSG( wxIsMainThread(), "unsafe to call from other threads" );
 
     return gs_socketInitCount != 0;
 }
@@ -2134,8 +2134,15 @@ public:
 
     virtual void OnExit()
     {
-        if ( wxSocketBase::IsInitialized() )
-            wxSocketBase::Shutdown();
+        if (wxIsMainThread())
+        {
+            if ( wxSocketBase::IsInitialized() )
+                wxSocketBase::Shutdown();
+        }
+        else
+        {
+            wxASSERT_MSG( wxIsMainThread(), wxT("wxSocketModule::OnExit() called from the wrong thread") );
+        }
     }
 
 private:
